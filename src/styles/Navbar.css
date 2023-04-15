@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", "Arial";
+}
+nav #menu {
+  display: flex;
+  flex-basis: 70%;
+  margin-top: 4vh;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+nav #menu ul {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 50px;
+  justify-content: center;
+}
+nav #menu ul li:first-child {
+  margin: 15px 40px 15px 80px;
+}
+nav #menu ul li:last-child {
+  margin: 15px 80px 15px 40px;
+}
+nav #menu ul li {
+  display: inline;
+  margin: 15px 40px 15px 40px;
+}
+nav #menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+nav #sign-btn {
+  flex-basis: 15%;
+  margin-top: 4vh;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+nav #sign-btn div {
+  border: 1px solid black;
+  border-radius: 50px;
+  height: 100%;
+  width: 175px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav #sign-btn div a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+nav #logo {
+  flex-basis: 15%;
+  border: 1px solid black;
+  border-radius: 50px;
+}/*# sourceMappingURL=Navbar.css.map */
