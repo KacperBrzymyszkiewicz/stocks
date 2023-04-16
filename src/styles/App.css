@@ -67,7 +67,13 @@
 #main-container #main-first-container #graph #right-pad {
   background-color: rgb(20, 20, 20);
   background-image: url("../images/eth.jpg");
-  background-size: cover;
+  background-size: 550px;
+}
+#main-container #main-first-container #graph #right-pad p {
+  margin-left: 5%;
+  margin-top: 5%;
+  font-size: 1vw;
+  font-weight: 200;
 }
 #main-container #main-first-container #graph .graph-pad-big {
   display: flex;

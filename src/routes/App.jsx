@@ -45,7 +45,7 @@ function App(props) {
           </div>
 
           <div id="right-pad" className="graph-pad-big">
-          
+            <p>Learn more about crypto</p>
           </div>
           <div className="graph-pad-wide">
             
