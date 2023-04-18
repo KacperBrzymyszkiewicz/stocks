@@ -99,4 +99,9 @@
 }
 #main-container #main-first-container #graph .graph-pad-big #left-bottom-pad {
   align-self: flex-end;
+}
+#main-container #main-second-container {
+  border: solid 1px black;
+  display: flex;
+  flex-basis: 80%;
 }/*# sourceMappingURL=App.css.map */

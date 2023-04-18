@@ -4,27 +4,15 @@ import '../styles/App.css'
 
 function App(props) {
   const [BTC,setBTC] = useState("")
-  function fetchAlphaVantage(from,to)
+  function fetchAPI(api)
   {
-    fetch('https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency='+from+'&to_currency='+to+'&apikey=ZCJCDNTELQ23JQL9')
+    fetch(api)
     .then(response => response.json())
     .then(response => console.log(response))
     .catch(err => console.error(err));
   }
   useEffect(() => {
-    fetchAlphaVantage('ETH','USD')
-    const options = {
-      method: 'GET',
-      headers: {
-        'X-RapidAPI-Key': 'be008410abmsh81df7209eddea79p1b114djsn8a1bb70bec7f',
-        'X-RapidAPI-Host': 'twelve-data1.p.rapidapi.com'
-      }
-    };
-    
-    fetch('https://twelve-data1.p.rapidapi.com/cryptocurrencies?currency_base=BTC&format=json', options)
-      .then(response => response.json())
-      .then(response => console.log(response))
-      .catch(err => console.error(err));
+    fetchAPI('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&page=1')
   },[]);
   return (
     <>
@@ -52,7 +40,13 @@ function App(props) {
           </div>
         </div>
       </div>
+      <div id="main-second-container">
+        <div id="">
 
+        </div>
+
+
+      </div>
     </div>
     </>
   )
