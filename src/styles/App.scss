@@ -4,9 +4,12 @@
 #main-container{
     display: flex;
     margin: 15vh 5vw 0 5vw;
+    flex-wrap: wrap;
+    justify-content: center;
     #main-first-container{
         display: flex;
         justify-content: space-between;
+        flex-basis: 90%;
         #main-text{
             display: flex;
             flex-basis: 45%;
@@ -106,6 +109,7 @@
 #main-second-container{
     border: solid 1px black;
     display: flex;
-    flex-basis: 80%;
+    flex-basis: 90%;
+    margin-top: 200px;
 }
 }

@@ -1,19 +1,13 @@
 import React, { useEffect, useState } from "react"
 import Navbar from "../components/Navbar"
+import useFetchAPI from "../hooks/useFetchAPI"
 import '../styles/App.css'
-
+import Board from "../components/Board"
 function App(props) {
-  const [BTC,setBTC] = useState("")
-  function fetchAPI(api)
-  {
-    fetch(api)
-    .then(response => response.json())
-    .then(response => console.log(response))
-    .catch(err => console.error(err));
-  }
-  useEffect(() => {
-    fetchAPI('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&page=1')
-  },[]);
+const {loading,error,data} = useFetchAPI('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd')
+ if(loading) return('loading')
+ 
+ console.log(data)
   return (
     <>
     <Navbar/>
@@ -41,10 +35,8 @@ function App(props) {
         </div>
       </div>
       <div id="main-second-container">
-        <div id="">
 
-        </div>
-
+      <Board/>
 
       </div>
     </div>
