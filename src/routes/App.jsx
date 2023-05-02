@@ -42,8 +42,9 @@ function App(props) {
       </div>
       <div id="main-second-container">
       <ul>
-        <li id="titles" className="crypto-li"><div className="image">Coin</div><div>Name</div><div>Current price $</div><div>Market cap $</div><div>24h Change %</div></li>
-        {data.map((coin)=><li className="crypto-li"><div className="image"><img src={coin.image} alt="" /></div><div>{coin.name}</div> <div>${coin.current_price}</div> <div>${coin.market_cap}</div> <div>{coin.price_change_percentage_24h}%</div></li>)}
+        <li id="titles" className="crypto-li"><div className="rank" ></div><div className="image" ><p onClick={()=>{console.log('bomba');setData(data.reverse())}}>Coin</p></div><div>Current price $</div><div>Market cap $</div><div>24h Change %</div></li>
+        <hr />
+        {data.map((coin)=><li className="crypto-li"><div className="rank">{coin.market_cap_rank}</div><div className="image"><img src={coin.image} alt="" />{coin.name}</div> <div>${(coin.current_price)}</div> <div>${coin.market_cap}</div> <div>{coin.price_change_percentage_24h}%</div></li>)}
       </ul>
 
       </div>

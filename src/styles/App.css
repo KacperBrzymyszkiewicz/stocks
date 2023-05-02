@@ -20,7 +20,7 @@
 }
 #main-container #main-first-container #main-text h1 {
   text-align: justify;
-  font-size: 4vw;
+  font-size: 3.5vw;
 }
 #main-container #main-first-container #main-text h2 {
   font-weight: 500;
@@ -117,6 +117,11 @@
 }
 #main-container #main-second-container ul #titles {
   padding: 20px 0 20px 0;
+  border: none;
+}
+#main-container #main-second-container ul hr {
+  border-top: none;
+  border-color: rgb(61, 61, 61);
 }
 #main-container #main-second-container ul .crypto-li {
   padding: 5px 0 5px 0;
@@ -126,6 +131,7 @@
   border-bottom: rgb(61, 61, 61) solid 1px;
 }
 #main-container #main-second-container ul .crypto-li img {
+  margin-right: 10px;
   align-self: center;
   border-radius: 50%;
   width: 40px;
@@ -133,11 +139,20 @@
 }
 #main-container #main-second-container ul .crypto-li div {
   display: flex;
-  flex-basis: 20%;
+  flex-basis: 25%;
+  align-items: center;
 }
-#main-container #main-second-container ul .crypto-li .image {
-  margin-left: 5%;
+#main-container #main-second-container ul .crypto-li div p:hover {
+  cursor: pointer;
+}
+#main-container #main-second-container ul .crypto-li .rank {
+  margin-left: 2%;
+  flex-basis: 5%;
 }
 #main-container #main-second-container ul .crypto-li:hover {
   background-color: rgb(41, 41, 41);
+}
+#main-container #main-second-container ul #titles:hover {
+  background-color: rgb(20, 20, 20);
+  border-radius: 30px;
 }/*# sourceMappingURL=App.css.map */
