@@ -104,8 +104,40 @@
   align-self: flex-end;
 }
 #main-container #main-second-container {
-  border: solid 1px black;
   display: flex;
   flex-basis: 90%;
   margin-top: 200px;
+  background-color: rgb(20, 20, 20);
+  border-radius: 30px;
+  color: white;
+}
+#main-container #main-second-container ul {
+  width: 100%;
+  list-style: none;
+}
+#main-container #main-second-container ul #titles {
+  padding: 20px 0 20px 0;
+}
+#main-container #main-second-container ul .crypto-li {
+  padding: 5px 0 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: rgb(61, 61, 61) solid 1px;
+}
+#main-container #main-second-container ul .crypto-li img {
+  align-self: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+#main-container #main-second-container ul .crypto-li div {
+  display: flex;
+  flex-basis: 20%;
+}
+#main-container #main-second-container ul .crypto-li .image {
+  margin-left: 5%;
+}
+#main-container #main-second-container ul .crypto-li:hover {
+  background-color: rgb(41, 41, 41);
 }/*# sourceMappingURL=App.css.map */

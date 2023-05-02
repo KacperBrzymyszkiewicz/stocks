@@ -1,12 +1,18 @@
 import React, { useEffect, useState } from "react"
 import Navbar from "../components/Navbar"
-import useFetchAPI from "../hooks/useFetchAPI"
 import '../styles/App.css'
-import Board from "../components/Board"
 function App(props) {
-const {loading,error,data} = useFetchAPI('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd')
- if(loading) return('loading')
- 
+  const [data,setData] = useState([])
+  function useFetchAPI(url)
+  {
+    fetch(url)
+    .then(res =>res.json())
+    .then(data=>{setData(Object.values(data))})
+  }
+  useEffect(() => {
+    useFetchAPI('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1')
+   
+  },[]);
  console.log(data)
   return (
     <>
@@ -35,8 +41,10 @@ const {loading,error,data} = useFetchAPI('https://api.coingecko.com/api/v3/simpl
         </div>
       </div>
       <div id="main-second-container">
-
-      <Board/>
+      <ul>
+        <li id="titles" className="crypto-li"><div className="image">Coin</div><div>Name</div><div>Current price $</div><div>Market cap $</div><div>24h Change %</div></li>
+        {data.map((coin)=><li className="crypto-li"><div className="image"><img src={coin.image} alt="" /></div><div>{coin.name}</div> <div>${coin.current_price}</div> <div>${coin.market_cap}</div> <div>{coin.price_change_percentage_24h}%</div></li>)}
+      </ul>
 
       </div>
     </div>
