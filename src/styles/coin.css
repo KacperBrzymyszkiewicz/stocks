@@ -1,0 +1,35 @@
+.coin-main {
+  display: flex;
+  justify-content: center;
+}
+.coin-main .coin-first {
+  display: flex;
+  flex-basis: 80%;
+  flex-wrap: wrap;
+  background-color: rgb(40, 40, 40);
+  border-radius: 30px;
+  margin: 10px 0 10px 0;
+}
+.coin-main .coin-first div {
+  display: flex;
+  flex-basis: 100%;
+  margin-left: 5%;
+  color: white;
+}
+.coin-main .coin-first .coin-name {
+  font-size: 30px;
+  align-items: center;
+}
+.coin-main .coin-first .coin-name img {
+  margin-right: 10px;
+}
+.coin-main .coin-first .coin-price {
+  font-size: 40px;
+  font-weight: 600;
+}
+.coin-main .coin-first .coin-rank p {
+  background-color: rgb(60, 60, 60);
+  border-radius: 20px;
+  margin: 5px 0px 5px 0px;
+  padding: 5px 10px 5px 10px;
+}/*# sourceMappingURL=coin.css.map */

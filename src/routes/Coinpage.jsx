@@ -20,7 +20,7 @@ function Coinpage(props){
     return(
         <>
         <Navbar/>
-        <Coin {...coinData}/>
+        {coinData && <Coin {...coinData}/>}
         </>
     )
 }
