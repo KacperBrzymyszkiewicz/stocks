@@ -1,8 +1,9 @@
-function Coin(coin){
+function Coin(props){
     return(
         <>
         <div>
-            {coin.id}
+            {props.id}
+            {props.current_price}
         </div>
         </>
     )
