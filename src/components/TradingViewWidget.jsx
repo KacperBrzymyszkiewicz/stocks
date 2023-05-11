@@ -1,4 +1,4 @@
-// TradingViewWidget.jsxsdgsdgzxvzxvz
+// TradingViewWidget.jsxsdgsdgzxvzxvzeadggedsdgsdg
 
 import React, { useEffect, useRef } from 'react';
 
