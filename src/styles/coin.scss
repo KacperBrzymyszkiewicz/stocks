@@ -1,14 +1,21 @@
+.red{
+    color: rgb(255, 54, 54);
+}
+.green{
+    color: rgb(42, 212, 42);
+}
 .coin-main{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     .coin-first{
         display: flex;
         flex-basis: 80%;
         flex-wrap: wrap;
         background-color: rgb(40,40,40);
         border-radius: 30px;
-        margin: 10px 0 10px 0;
-        div{
+        margin: 20px 0 10px 0;
+        .coin-name,.coin-price,.coin-rank{
             display: flex;
             flex-basis: 100%;
             margin-left: 5%;
@@ -24,15 +31,73 @@
         .coin-price{
             font-size: 40px;
             font-weight: 600;
+            align-items: center;
+            p{
+                font-size: 30px;
+                font-weight: 300;
+                margin-left: 20px;
+            }
         }
         .coin-rank{
+            align-items: center;
+            justify-content: space-between;
+            a{
+                margin: 5px 15px 5px 0px;
+                text-decoration: none;
+                color: white;
+                display: flex;
+                background-color: rgb(60,60,60);
+                border-radius: 20px;
+                padding: 5px 10px 5px 10px;
+            }
             p{
                 background-color: rgb(60,60,60);
                 border-radius: 20px;
-                margin: 5px 0px 5px 0px;
+                margin: 20px 0px 5px 0px;
                 padding: 5px 10px 5px 10px;
             }
             
         }
+        .coin-chart{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            display: flex;
+            flex-basis: 100%;
+            justify-content: center;
+            height: 400px;
+            .tradingview-widget-container{
+                border: 10px solid white;
+                display: flex;
+                flex-basis: 100%;
+                border-radius: 20px;
+                margin-left: 5%;
+                margin-right: 5%;
+                #tradingview_c8f70{
+                display: flex;
+                flex-basis: 100%;
+                }
+            }
+        }
+        .coin-second{
+            flex-basis: 90%;
+            background-color: rgb(40,40,40);
+            margin-left: 5%;
+            margin-bottom: 10px;
+           .coin-list-container{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+                .coin-list{
+                    list-style: none;
+                    color: white;
+                    li{
+                        font-size: 20px;
+                        border-bottom: 1px solid rgb(80,80,80);
+                    }
+                }
+            
+           }
+        }
     }
+
 }

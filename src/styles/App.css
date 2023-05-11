@@ -149,6 +149,10 @@
   margin-left: 2%;
   flex-basis: 5%;
 }
+#main-container #main-second-container ul .crypto-li a {
+  text-decoration: none;
+  color: white;
+}
 #main-container #main-second-container ul .crypto-li:hover {
   background-color: rgb(41, 41, 41);
 }

@@ -16,6 +16,7 @@ function App(props) {
    
   },[]);
 
+
  console.log(data)
   return (
     <>

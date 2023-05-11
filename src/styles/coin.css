@@ -1,6 +1,15 @@
+.red {
+  color: rgb(255, 54, 54);
+}
+
+.green {
+  color: rgb(42, 212, 42);
+}
+
 .coin-main {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .coin-main .coin-first {
   display: flex;
@@ -8,9 +17,9 @@
   flex-wrap: wrap;
   background-color: rgb(40, 40, 40);
   border-radius: 30px;
-  margin: 10px 0 10px 0;
+  margin: 20px 0 10px 0;
 }
-.coin-main .coin-first div {
+.coin-main .coin-first .coin-name, .coin-main .coin-first .coin-price, .coin-main .coin-first .coin-rank {
   display: flex;
   flex-basis: 100%;
   margin-left: 5%;
@@ -26,10 +35,68 @@
 .coin-main .coin-first .coin-price {
   font-size: 40px;
   font-weight: 600;
+  align-items: center;
+}
+.coin-main .coin-first .coin-price p {
+  font-size: 30px;
+  font-weight: 300;
+  margin-left: 20px;
+}
+.coin-main .coin-first .coin-rank {
+  align-items: center;
+  justify-content: space-between;
+}
+.coin-main .coin-first .coin-rank a {
+  margin: 5px 15px 5px 0px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  background-color: rgb(60, 60, 60);
+  border-radius: 20px;
+  padding: 5px 10px 5px 10px;
 }
 .coin-main .coin-first .coin-rank p {
   background-color: rgb(60, 60, 60);
   border-radius: 20px;
-  margin: 5px 0px 5px 0px;
+  margin: 20px 0px 5px 0px;
   padding: 5px 10px 5px 10px;
+}
+.coin-main .coin-first .coin-chart {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  height: 400px;
+}
+.coin-main .coin-first .coin-chart .tradingview-widget-container {
+  border: 10px solid white;
+  display: flex;
+  flex-basis: 100%;
+  border-radius: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.coin-main .coin-first .coin-chart .tradingview-widget-container #tradingview_c8f70 {
+  display: flex;
+  flex-basis: 100%;
+}
+.coin-main .coin-first .coin-second {
+  flex-basis: 90%;
+  background-color: rgb(40, 40, 40);
+  margin-left: 5%;
+  margin-bottom: 10px;
+}
+.coin-main .coin-first .coin-second .coin-list-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.coin-main .coin-first .coin-second .coin-list-container .coin-list {
+  list-style: none;
+  color: white;
+}
+.coin-main .coin-first .coin-second .coin-list-container .coin-list li {
+  font-size: 20px;
+  border-bottom: 1px solid rgb(80, 80, 80);
 }/*# sourceMappingURL=coin.css.map */
