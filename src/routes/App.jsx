@@ -2,22 +2,31 @@ import React, { useEffect, useState,useMemo } from "react"
 import { Link } from "react-router-dom"
 import Navbar from "../components/Navbar"
 import Board from "../components/Board"
+import Graph from "../components/Graph"
 import '../styles/App.css'
 function App(props) {
   const [data,setData] = useState([])
-  function useFetchAPI(url,state)
+  const [trend,setTrend] = useState([])
+  function useFetchAPI(url)
   {
     fetch(url)
     .then(res =>res.json())
     .then(data=>{setData(Object.values(data))})
   }
+  function useFetchAPIT(url)
+  {
+    fetch(url)
+    .then(res =>res.json())
+    .then(data=>{setTrend(Object.values(data.coins))})
+  }
   useEffect(() => {
     useFetchAPI('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1')
-   
+    useFetchAPIT('https://api.coingecko.com/api/v3/search/trending')
   },[]);
 
 
  console.log(data)
+ console.log(trend)
   return (
     <>
     <Navbar/>
@@ -30,19 +39,7 @@ function App(props) {
               <input onMouseLeave={()=>{}} type="search" name="" id="" placeholder="Search" />
               <p>over 2500 stocks</p></div>
             </div>
-        <div id="graph">
-          <div className="graph-pad-big">
-              <div className="graph-pad" id="left-top-pad"></div>
-              <div className="graph-pad" id="left-bottom-pad"></div>
-          </div>
-
-          <div id="right-pad" className="graph-pad-big">
-            <p>Learn more about crypto</p>
-          </div>
-          <div className="graph-pad-wide">
-            
-          </div>
-        </div>
+        <Graph coins = {trend}/>
       </div>
       <div id="main-second-container">
         <Board coins = {data}/>

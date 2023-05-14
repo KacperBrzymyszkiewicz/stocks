@@ -32,7 +32,7 @@ export default function TradingViewWidget(props) {
           new window.TradingView.widget({
             autosize: true,
             symbol: "BITSTAMP:"+props.symbol +"USD",
-            interval: "D",
+            interval: "H",
             timezone: "Etc/UTC",
             theme: "light",
             style: "1",
