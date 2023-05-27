@@ -31,7 +31,7 @@ export default function TradingViewWidget(props) {
         if (document.getElementById('tradingview_c8f70') && 'TradingView' in window) {
           new window.TradingView.widget({
             autosize: true,
-            symbol: "BITSTAMP:"+props.symbol +"USD",
+            symbol: "KUCOIN:"+props.symbol +"USDC",
             interval: "H",
             timezone: "Etc/UTC",
             theme: "light",

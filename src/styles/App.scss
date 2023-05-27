@@ -87,6 +87,7 @@
                 color: white;
                 justify-content: start;
                 align-items: top;
+
                 img{
                     height: 3vw;
                 }
@@ -101,6 +102,39 @@
                 }
                 #left-bottom-pad{
                     align-self: flex-end;
+                }
+                #left-top-pad{
+                    a{
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-decoration: none;
+                        color: white;
+                    }
+                    #graph-item{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-wrap: wrap;
+                            p{
+                                
+                                font-size: 22px;
+                            }
+                        .w100{
+                            
+                            display: flex;
+                            flex-basis: 100%;
+                            justify-content: center;
+                            img{
+                                border-radius: 50%;
+                               width: 50px;
+                               height: 50px;
+
+                            }
+                        }
+                    }
                 }
             }
     }

@@ -101,6 +101,34 @@
 #main-container #main-first-container #graph .graph-pad-big #left-bottom-pad {
   align-self: flex-end;
 }
+#main-container #main-first-container #graph .graph-pad-big #left-top-pad a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+#main-container #main-first-container #graph .graph-pad-big #left-top-pad #graph-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#main-container #main-first-container #graph .graph-pad-big #left-top-pad #graph-item p {
+  font-size: 22px;
+}
+#main-container #main-first-container #graph .graph-pad-big #left-top-pad #graph-item .w100 {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+}
+#main-container #main-first-container #graph .graph-pad-big #left-top-pad #graph-item .w100 img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
 #main-container #main-second-container {
   display: flex;
   flex-basis: 90%;

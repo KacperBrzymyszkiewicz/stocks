@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
 function Graph(props){
     const [index,setIndex] = useState(0)
-    let coins = props.coins.map(coin=> <div>{coin.item.id}</div>)
+    let coins = props.coins.map(coin=> <Link to={`/coin/${coin.item.id}`}><div id="graph-item"> <div className="w100"><img src={coin.item.small}/></div><p>{coin.item.id}</p></div></Link>)
         useEffect(()=>{
             setInterval(()=>{
                 setIndex((index)=>{
@@ -13,15 +14,16 @@ function Graph(props){
                     {
                         return(0)
                     }
+                    
                     })
                 
-                },5000)
+                },7000)
         },[])
 
     return(
         <div id="graph">
           <div className="graph-pad-big">
-              <div className="graph-pad" id="left-top-pad" onClick={()=>setIndex(index+1)}>{coins[index]}</div>
+              <div className="graph-pad" id="left-top-pad">{coins[index]}</div>
               <div className="graph-pad" id="left-bottom-pad"></div>
           </div>
 
