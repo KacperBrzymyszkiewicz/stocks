@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import '../styles/Navbar.css'
-function Navbar() {
+function Navbar(props) {
     return(
         <nav>
             <div id="logo"></div>
@@ -27,8 +27,8 @@ function Navbar() {
             </ul>
             </div>
             <div id="sign-btn">
-                <div>
-                    <Link>Sign in</Link>
+                <div onClick={props.modal}>
+                    Sign in
                 </div>
                 
             </div>
