@@ -60,6 +60,9 @@ nav #sign-btn div a {
   color: black;
   font-weight: 700;
 }
+nav #sign-btn div:hover {
+  cursor: pointer;
+}
 nav #logo {
   flex-basis: 15%;
   border: 1px solid black;

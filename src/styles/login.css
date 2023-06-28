@@ -2,11 +2,11 @@
   z-index: 1000;
   position: fixed;
   left: 35%;
-  top: 12.5%;
+  top: 7.5%;
   width: 30%;
-  height: 75%;
+  height: 85%;
   background-color: rgb(255, 255, 255);
-  border-radius: 30px;
+  border-radius: 13px;
 }
 #loginform #form {
   width: 100%;
@@ -16,11 +16,69 @@
   align-items: center;
 }
 #loginform #form #marg {
-  margin-top: 20%;
-  width: 60%;
+  margin-top: 10%;
+  width: 70%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+#loginform #form #marg h1 {
+  font-weight: 500;
+}
+#loginform #form #marg h2 {
+  font-weight: 400;
+  font-size: 18px;
+  color: rgb(158, 169, 184);
+  margin-top: 5px;
+}
+#loginform #form #marg #divide {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  justify-content: center;
+}
+#loginform #form #marg #divide h2 {
+  font-size: 17px;
+  font-weight: 400;
+  color: rgb(70, 76, 83);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#loginform #form #marg #divide hr {
+  height: 2px;
+  color: black;
+  flex-basis: 45%;
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+  border-radius: 10px;
+  background-color: rgb(219, 223, 228);
+  border: none;
+}
+#loginform #form #marg button {
+  flex-basis: 100%;
+  height: 60px;
+  border-radius: 13px;
+  margin-top: 20px;
+  background-color: rgb(50, 62, 226);
+  border: none;
+  color: white;
+  font-size: 20px;
+}
+#loginform #form #marg button:hover {
+  cursor: pointer;
+}
+#loginform #form #marg .sin-btn {
+  margin-bottom: 10px;
+  flex-basis: 100%;
+  border-radius: 13px;
+  height: 60px;
+  border: solid rgb(219, 223, 228) 2px;
+  font-size: 18px;
+  color: rgb(70, 76, 83);
+  font-weight: 400;
+  background-color: white;
+  color: black;
 }
 #loginform #form #marg .pole {
   display: flex;
@@ -31,18 +89,41 @@
 #loginform #form #marg .pole p {
   flex-basis: 100%;
   font-size: 15px;
-  color: rgb(51, 51, 51);
+  color: rgb(70, 76, 83);
 }
 #loginform #form #marg .pole input {
   outline: none;
+  padding-left: 5px;
+  padding-right: 5px;
   margin-bottom: 10px;
   flex-basis: 100%;
-  border-radius: 10px;
-  height: 50px;
-  border: solid rgb(214, 214, 214) 2px;
+  border-radius: 13px;
+  height: 60px;
+  border: solid rgb(219, 223, 228) 2px;
+  font-size: 18px;
+  color: rgb(70, 76, 83);
+  font-weight: 400;
 }
 #loginform #form #marg .pole input:focus {
   outline: none;
+}
+#loginform #form #marg .pole input::-moz-placeholder {
+  color: rgb(203, 207, 211);
+}
+#loginform #form #marg .pole input::placeholder {
+  color: rgb(203, 207, 211);
+}
+#loginform #form #marg .pole #pass-cont {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: end;
+}
+#loginform #form #marg .pole #pass-cont #pass {
+  flex-basis: content;
+  justify-self: end;
+}
+#loginform #form #marg .pole #pass-cont #pass:hover {
+  cursor: pointer;
 }
 
 #back {
