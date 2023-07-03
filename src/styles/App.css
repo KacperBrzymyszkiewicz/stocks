@@ -39,7 +39,7 @@
   font-size: 1vw;
   display: inline;
 }
-#main-container #main-first-container #main-text div p {
+#main-container #main-first-container #main-text div #slogan {
   margin-left: 2vw;
   display: inline;
   font-size: 1.3vw;
@@ -70,11 +70,8 @@
 #main-container #main-first-container #graph #right-pad {
   background-color: rgb(20, 20, 20);
 }
-#main-container #main-first-container #graph #right-pad p {
-  margin-left: 5%;
-  margin-top: 5%;
-  font-size: 1vw;
-  font-weight: 200;
+#main-container #main-first-container #graph #left-pad {
+  justify-content: start;
 }
 #main-container #main-first-container #graph .graph-pad-big {
   display: flex;
@@ -84,102 +81,101 @@
   flex-wrap: wrap;
   color: white;
   justify-content: start;
-  align-items: top;
-}
-#main-container #main-first-container #graph .graph-pad-big img {
-  height: 3vw;
-}
-#main-container #main-first-container #graph .graph-pad-big h3 {
-  font-size: 2vw;
-}
-#main-container #main-first-container #graph .graph-pad-big p {
-  font-size: 1vw;
+  align-items: center;
+  justify-content: center;
 }
 #main-container #main-first-container #graph .graph-pad-big #left-top-pad, #main-container #main-first-container #graph .graph-pad-big #left-bottom-pad {
-  background-color: rgb(12, 12, 12);
+  background-color: rgb(20, 20, 20);
+  flex-basis: 95%;
 }
 #main-container #main-first-container #graph .graph-pad-big #left-bottom-pad {
   align-self: flex-end;
 }
-#main-container #main-first-container #graph .graph-pad-big #left-top-full {
+#main-container #main-first-container #graph .graph-pad-big #right-pad-container {
+  justify-content: center;
   position: relative;
   transform-style: preserve-3d;
   display: flex;
-  flex-basis: 90%;
-  height: 50%;
+  flex-basis: 202px;
+  height: 200px;
   flex-wrap: wrap;
   animation: graph-item-change;
   animation-duration: 7s;
   animation-iteration-count: infinite;
 }
-#main-container #main-first-container #graph .graph-pad-big #left-top-full #left-top-pad-1 {
-  background-color: rgb(12, 12, 12);
+#main-container #main-first-container #graph .graph-pad-big #right-pad-container #cube-left {
+  background-color: rgb(255, 255, 255);
   width: 100%;
   height: 100%;
   flex-basis: 100%;
   position: absolute;
-  transform: rotateY(-90deg) translateZ(200px);
-  border-radius: 0;
+  transform: rotateY(-90deg) translateZ(100px);
+  border-radius: 30px;
 }
-#main-container #main-first-container #graph .graph-pad-big #left-top-full #left-top-pad-1 a {
+#main-container #main-first-container #graph .graph-pad-big #right-pad-container #cube-left a {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
+  font-weight: 400;
 }
-#main-container #main-first-container #graph .graph-pad-big #left-top-full #left-top-pad-1 #graph-item {
+#main-container #main-first-container #graph .graph-pad-big #right-pad-container #cube-left #graph-item {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-#main-container #main-first-container #graph .graph-pad-big #left-top-full #left-top-pad-1 #graph-item p {
-  font-size: 22px;
+#main-container #main-first-container #graph .graph-pad-big #right-pad-container #cube-left #graph-item #nazwaa {
+  font-weight: 400;
+  font-size: 20px;
 }
-#main-container #main-first-container #graph .graph-pad-big #left-top-full #left-top-pad-1 #graph-item .w100 {
+#main-container #main-first-container #graph .graph-pad-big #right-pad-container #cube-left #graph-item .w100 {
   display: flex;
   flex-basis: 100%;
   justify-content: center;
 }
-#main-container #main-first-container #graph .graph-pad-big #left-top-full #left-top-pad-1 #graph-item .w100 img {
+#main-container #main-first-container #graph .graph-pad-big #right-pad-container #cube-left #graph-item .w100 #obrazek {
   border-radius: 50%;
   width: 50px;
   height: 50px;
 }
-#main-container #main-first-container #graph .graph-pad-big #left-top-full #left-top-pad {
-  border-radius: 0;
+#main-container #main-first-container #graph .graph-pad-big #right-pad-container #cube-front {
+  background-color: rgb(255, 255, 255);
+  font-weight: 400;
+  border-radius: 30px;
   width: 100%;
   height: 100%;
   position: absolute;
   transform: translateZ(100px) rotateY(0deg);
 }
-#main-container #main-first-container #graph .graph-pad-big #left-top-full #left-top-pad a {
+#main-container #main-first-container #graph .graph-pad-big #right-pad-container #cube-front a {
+  font-weight: 400;
+  color: black;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: white;
 }
-#main-container #main-first-container #graph .graph-pad-big #left-top-full #left-top-pad #graph-item {
+#main-container #main-first-container #graph .graph-pad-big #right-pad-container #cube-front #graph-item {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-#main-container #main-first-container #graph .graph-pad-big #left-top-full #left-top-pad #graph-item p {
+#main-container #main-first-container #graph .graph-pad-big #right-pad-container #cube-front #graph-item p {
   font-size: 22px;
 }
-#main-container #main-first-container #graph .graph-pad-big #left-top-full #left-top-pad #graph-item .w100 {
+#main-container #main-first-container #graph .graph-pad-big #right-pad-container #cube-front #graph-item .w100 {
   display: flex;
   flex-basis: 100%;
   justify-content: center;
 }
-#main-container #main-first-container #graph .graph-pad-big #left-top-full #left-top-pad #graph-item .w100 img {
+#main-container #main-first-container #graph .graph-pad-big #right-pad-container #cube-front #graph-item .w100 img {
   border-radius: 50%;
   width: 50px;
   height: 50px;

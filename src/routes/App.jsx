@@ -49,7 +49,7 @@ function App(props) {
             <h2>We have been analyzing the stock market for over 25 years to keep you update on new strageties and information. Look for what interests you.</h2>
             <div>            
               <input onMouseLeave={()=>{}} type="search" name="" id="" placeholder="Search" />
-              <p>over 2500 stocks</p></div>
+              <p id="slogan">over 2500 stocks</p></div>
             </div>
         <Graph coins = {trend}/>
       </div>

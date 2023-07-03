@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import '../styles/Navbar.css'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 function Navbar(props) {
     return(
         <nav>
@@ -7,10 +8,10 @@ function Navbar(props) {
             <div id="menu">
             <ul>
                 <li>
-                    <Link to='/profile'>Trade</Link>
+                    <Link to='/'>Home</Link>
                 </li>
                 <li>
-                    <Link>Cryptocurrencies</Link>
+                    <Link to='/Categories'>Cryptocurrencies</Link>
                 </li>
                 <li>
                     <Link>Stocks</Link>
@@ -26,11 +27,19 @@ function Navbar(props) {
                 </li>
             </ul>
             </div>
+            <div id="menu-left">
+            <div>
+            <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" style={{color: "#000000",}} />
+            <input type="search" name="" placeholder="Search" id="search-bar" />
+            </div>
+            
             <div id="sign-btn">
+                
                 <div onClick={props.modal}>
                     Sign in
                 </div>
                 
+            </div>
             </div>
         </nav>
     )
