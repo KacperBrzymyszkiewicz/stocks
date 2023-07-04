@@ -1,3 +1,25 @@
+@charset "UTF-8";
+/* clears the ‘X’ from Internet Explorer */
+input[type=search]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type=search]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* clears the ‘X’ from Chrome */
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  display: none;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -39,37 +61,49 @@ nav #menu ul li a {
   font-weight: 600;
 }
 nav #menu-left {
+  margin-top: 4vh;
   flex-basis: 25%;
   display: flex;
   justify-content: space-between;
 }
-nav #menu-left #search-bar {
+nav #menu-left #search-bar-container {
   border: 1px solid black;
-  border-radius: 50%;
-  width: 60px;
-  margin-top: 4vh;
   display: flex;
+  align-items: center;
+  border-radius: 100px;
+  flex-basis: 60px;
+  overflow: hidden;
+  transition: 1s;
+  justify-content: start;
+}
+nav #menu-left #search-bar-container #s-icon {
+  position: relative;
+  height: 25px;
+  left: 15px;
+}
+nav #menu-left #search-bar-container #s-icon :hover {
+  cursor: pointer;
+}
+nav #menu-left #search-bar-container #search-bar {
+  text-decoration: none;
+  left: 34px;
+  position: relative;
+  font-size: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  width: 75%;
   list-style: none;
   justify-content: center;
   align-items: center;
   transition: 0.5s;
 }
-nav #menu-left #search-bar #search-text {
+nav #menu-left #search-bar-container #search-bar #search-text {
   width: 100%;
   height: 100%;
 }
-nav #menu-left #search-bar:hover {
-  cursor: pointer;
-}
-nav #menu-left #search-bar:focus {
-  width: 200px;
-  border-radius: 100px;
-  border: 1px solid black;
-  outline: none;
-}
 nav #menu-left #sign-btn {
   flex-basis: 15%;
-  margin-top: 4vh;
   display: flex;
   list-style: none;
   justify-content: center;

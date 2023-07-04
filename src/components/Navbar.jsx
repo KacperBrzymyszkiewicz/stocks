@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import '../styles/Navbar.css'
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 function Navbar(props) {
     return(
@@ -28,9 +29,12 @@ function Navbar(props) {
             </ul>
             </div>
             <div id="menu-left">
-            <div>
-            <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" style={{color: "#000000",}} />
-            <input type="search" name="" placeholder="Search" id="search-bar" />
+            <div onClick={()=>{
+                document.getElementById('search-bar-container').style.flexBasis = "275px";
+                document.getElementById("search-bar").focus()
+            }} id="search-bar-container">
+            <FontAwesomeIcon id="s-icon" icon={faMagnifyingGlass} />
+            <input onBlur={()=>{document.getElementById('search-bar-container').style.flexBasis='60px'}} type="search" name="" placeholder="Search" id="search-bar" />
             </div>
             
             <div id="sign-btn">
@@ -42,6 +46,8 @@ function Navbar(props) {
             </div>
             </div>
         </nav>
+        
     )
+    
 }
 export default Navbar
