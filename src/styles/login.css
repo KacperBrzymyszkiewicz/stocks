@@ -69,6 +69,7 @@
   cursor: pointer;
 }
 #loginform #form #marg .sin-btn {
+  display: flex;
   margin-bottom: 10px;
   flex-basis: 100%;
   border-radius: 13px;
@@ -79,6 +80,12 @@
   font-weight: 400;
   background-color: white;
   color: black;
+  justify-content: start;
+  align-items: center;
+}
+#loginform #form #marg .sin-btn .icon-btn {
+  margin-left: 15%;
+  margin-right: 10px;
 }
 #loginform #form #marg .pole {
   display: flex;
