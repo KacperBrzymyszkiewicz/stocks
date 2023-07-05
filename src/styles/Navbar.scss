@@ -67,7 +67,7 @@ nav{
                 align-items: center;
                 flex-basis: 60px;
                 height: 100%;
-            
+                cursor: pointer;
             #search-icon-container:hover{
                 cursor: pointer;
             }
@@ -77,9 +77,6 @@ nav{
                     display: flex;
                     flex-basis: 60px;
                     height: 25px;
-                    :hover{
-                        cursor: pointer;
-                    }
             }
             
             }

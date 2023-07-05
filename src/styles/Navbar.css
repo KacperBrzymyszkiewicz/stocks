@@ -82,6 +82,7 @@ nav #menu-left #search-bar-container #search-icon-container {
   align-items: center;
   flex-basis: 60px;
   height: 100%;
+  cursor: pointer;
 }
 nav #menu-left #search-bar-container #search-icon-container #search-icon-container:hover {
   cursor: pointer;
@@ -92,9 +93,6 @@ nav #menu-left #search-bar-container #search-icon-container #s-icon {
   display: flex;
   flex-basis: 60px;
   height: 25px;
-}
-nav #menu-left #search-bar-container #search-icon-container #s-icon :hover {
-  cursor: pointer;
 }
 nav #menu-left #search-bar-container #search-bar {
   display: flex;
