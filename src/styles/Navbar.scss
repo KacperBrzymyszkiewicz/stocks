@@ -61,18 +61,32 @@ nav{
             overflow: hidden;
             transition: 1s;
             justify-content: start;
-            #s-icon{
-                position: relative;
-                height: 25px;
-                left: 15px;
-                :hover{
-                    cursor: pointer;
-                }
+            flex-wrap: nowrap;
+            #search-icon-container{
+                display: flex;
+                align-items: center;
+                flex-basis: 60px;
+                height: 100%;
+            
+            #search-icon-container:hover{
+                cursor: pointer;
+            }
+                #s-icon{
+                    margin-left: 15px;
+                    margin-right: 20px;
+                    display: flex;
+                    flex-basis: 60px;
+                    height: 25px;
+                    :hover{
+                        cursor: pointer;
+                    }
+            }
+            
             }
             #search-bar{
+                display: flex;
+                flex-basis: 200px;
                 text-decoration: none;
-                left: 34px;
-                position:relative;
                 font-size: 100%;
                 height: 100%;
                 border: none;

@@ -30,10 +30,11 @@ function Navbar(props) {
             </div>
             <div id="menu-left">
             <div onClick={()=>{
-                document.getElementById('search-bar-container').style.flexBasis = "275px";
+                document.getElementById('search-bar-container').style.flexBasis = "260px";
                 document.getElementById("search-bar").focus()
             }} id="search-bar-container">
-            <FontAwesomeIcon id="s-icon" icon={faMagnifyingGlass} />
+                <div id="search-icon-container"><FontAwesomeIcon id="s-icon" icon={faMagnifyingGlass} /></div>
+            
             <input onBlur={()=>{document.getElementById('search-bar-container').style.flexBasis='60px'}} type="search" name="" placeholder="Search" id="search-bar" />
             </div>
             

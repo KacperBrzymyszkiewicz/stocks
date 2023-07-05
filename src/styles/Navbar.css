@@ -75,19 +75,31 @@ nav #menu-left #search-bar-container {
   overflow: hidden;
   transition: 1s;
   justify-content: start;
+  flex-wrap: nowrap;
 }
-nav #menu-left #search-bar-container #s-icon {
-  position: relative;
+nav #menu-left #search-bar-container #search-icon-container {
+  display: flex;
+  align-items: center;
+  flex-basis: 60px;
+  height: 100%;
+}
+nav #menu-left #search-bar-container #search-icon-container #search-icon-container:hover {
+  cursor: pointer;
+}
+nav #menu-left #search-bar-container #search-icon-container #s-icon {
+  margin-left: 15px;
+  margin-right: 20px;
+  display: flex;
+  flex-basis: 60px;
   height: 25px;
-  left: 15px;
 }
-nav #menu-left #search-bar-container #s-icon :hover {
+nav #menu-left #search-bar-container #search-icon-container #s-icon :hover {
   cursor: pointer;
 }
 nav #menu-left #search-bar-container #search-bar {
+  display: flex;
+  flex-basis: 200px;
   text-decoration: none;
-  left: 34px;
-  position: relative;
   font-size: 100%;
   height: 100%;
   border: none;
