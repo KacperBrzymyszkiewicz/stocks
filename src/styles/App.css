@@ -12,6 +12,7 @@
   display: flex;
   justify-content: space-between;
   flex-basis: 90%;
+  max-width: 90%;
 }
 #main-container #main-first-container #main-text {
   display: flex;
@@ -46,17 +47,41 @@
   font-weight: 600;
 }
 #main-container #main-first-container #graph {
+  max-width: 40%;
   display: flex;
   flex-basis: 40%;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 #main-container #main-first-container #graph .graph-pad-wide {
-  display: flex;
+  max-width: 100%;
   flex-basis: 100%;
+  display: flex;
   height: 35%;
   background-color: rgb(20, 20, 20);
   border-radius: 30px;
+  overflow: hidden;
+}
+#main-container #main-first-container #graph .graph-pad-wide #Coinline {
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  overflow: hidden;
+  flex-basis: 100%;
+}
+#main-container #main-first-container #graph .graph-pad-wide #Coinline #linecoin-list {
+  width: 200%;
+  flex-wrap: nowrap;
+  flex-basis: 100%;
+  height: 100%;
+  list-style: none;
+  display: flex;
+}
+#main-container #main-first-container #graph .graph-pad-wide #Coinline #linecoin-list .linecoin {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: nowrap;
 }
 #main-container #main-first-container #graph .graph-pad {
   display: flex;

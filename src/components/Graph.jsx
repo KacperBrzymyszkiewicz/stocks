@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
+import Coinline from "./Coinline"
 function Graph(props){
     const [index,setIndex] = useState(0)
     const [index1,setIndex1] = useState(1)
@@ -49,8 +50,11 @@ function Graph(props){
                 <div className="graph-pad" id="cube-front">{coins[index]}</div>
             </div>
           </div>
+          
           <div className="graph-pad-wide">
-            
+            <div id="coinline-container">
+            <Coinline/>
+            </div>
           </div>
         </div>     
     )

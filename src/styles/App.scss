@@ -1,6 +1,7 @@
 *{
     font-family: 'Poppins'
 }
+
 #main-container{
     display: flex;
     margin: 15vh 5vw 0 5vw;
@@ -10,6 +11,7 @@
         display: flex;
         justify-content: space-between;
         flex-basis: 90%;
+        max-width: 90%;
         #main-text{
             display: flex;
             flex-basis: 45%;
@@ -47,16 +49,41 @@
 
         }
         #graph{
+            max-width: 40%;
             display: flex;
             flex-basis: 40%;
             justify-content: space-between;
             flex-wrap: wrap;
             .graph-pad-wide{
-                display: flex;
+                max-width:100%;
                 flex-basis: 100%;
+                display: flex;
                 height: 35%;
                 background-color: rgb(20, 20, 20);
                 border-radius: 30px;
+                overflow: hidden;
+                #Coinline{
+                    width: 1000px;
+                    display: flex;
+                    justify-content: center;
+                    height: 100%;
+                    overflow: hidden;
+                    flex-basis: 100%;
+                    #linecoin-list
+                    {
+                        width: 200%;
+                        flex-wrap: nowrap;
+                        flex-basis: 100%;
+                        height: 100%;
+                        list-style: none;
+                        display: flex;
+                        .linecoin{
+                            display: flex;
+                            flex-basis: 100%;
+                            flex-wrap: nowrap;
+                        }
+                    }
+                }
             }
             .graph-pad{
                 display: flex;
