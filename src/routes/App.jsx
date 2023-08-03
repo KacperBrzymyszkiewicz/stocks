@@ -51,7 +51,7 @@ function App(props) {
               <input onMouseLeave={()=>{}} type="search" name="" id="" placeholder="Search" />
               <p id="slogan">over 2500 stocks</p></div>
             </div>
-        <Graph coins = {trend}/>
+        <Graph linecoins = {data} coins = {trend}/>
       </div>
       <div id="main-second-container">
         <Board coins = {data}/>

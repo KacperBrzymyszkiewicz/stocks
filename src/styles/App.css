@@ -63,12 +63,12 @@
   overflow: hidden;
 }
 #main-container #main-first-container #graph .graph-pad-wide #Coinline {
-  animation: coinline-move;
-  animation-duration: 8s;
+  animation: linecoin-move;
+  animation-duration: 12s;
   animation-iteration-count: infinite;
   position: relative;
-  right: 1200px;
-  width: 2000px;
+  right: 1000px;
+  width: 1600px;
   display: flex;
   height: 100%;
   overflow: hidden;
@@ -82,6 +82,7 @@
   list-style: none;
   display: flex;
   align-items: center;
+  justify-content: end;
 }
 #main-container #main-first-container #graph .graph-pad-wide #Coinline .linecoin-list .linecoin {
   background-color: white;
@@ -283,16 +284,37 @@
   }
 }
 @keyframes linecoin-move {
-  25% {
+  20% {
+    transform: translateX(0px);
+  }
+  28% {
     transform: translateX(200px);
   }
-  50% {
+  36% {
+    transform: translateX(200px);
+  }
+  44% {
     transform: translateX(400px);
   }
-  75% {
+  52% {
+    transform: translateX(400px);
+  }
+  60% {
     transform: translateX(600px);
   }
-  100% {
+  68% {
+    transform: translateX(600px);
+  }
+  76% {
     transform: translateX(800px);
+  }
+  84% {
+    transform: translateX(800px);
+  }
+  92% {
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translateX(1000px);
   }
 }/*# sourceMappingURL=App.css.map */

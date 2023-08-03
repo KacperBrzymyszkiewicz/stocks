@@ -5,7 +5,8 @@ function Graph(props){
     const [index,setIndex] = useState(0)
     const [index1,setIndex1] = useState(1)
     let coins = props.coins.map(coin=> <Link to={`/coin/${coin.item.id}`}><div id="graph-item"> <div className="w100"><img id="obrazek" src={coin.item.small}/></div><p id="nazwaa">{coin.item.id}</p></div></Link>)
-        useEffect(()=>{
+    let linecoins = props.linecoins.map(linecoin=><div>{linecoin.id}</div>)   
+    useEffect(()=>{
             setInterval(()=>{
                 setIndex1((index1)=>{
                     if(index1<6)
@@ -53,7 +54,7 @@ function Graph(props){
           
           <div className="graph-pad-wide">
             <div id="coinline-container">
-            <Coinline/>
+            <Coinline linecoins = {linecoins}/>
             </div>
           </div>
         </div>     
