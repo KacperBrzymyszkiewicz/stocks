@@ -64,7 +64,7 @@
                 overflow: hidden;
                 #Coinline{
                     animation: linecoin-move;
-                    animation-duration: 12s;
+                    animation-duration: 14s;
                     animation-iteration-count: infinite;
                     position: relative;
                     right: 1000px;
@@ -88,11 +88,31 @@
                             display: flex;
                             width: 180px;
                             border-radius: 10px;
-                            flex-wrap: nowrap;
+                            flex-wrap: wrap;
                             align-items: center;
                             justify-content: center;
                             height: 60%;
                             margin-left: 20px;
+                            .linecoindiv{
+                                display: flex;
+                                flex-wrap: nowrap;
+                                align-items: center;
+                                .linecoinimg{
+
+                                    width: 50px;
+                                    height: 50px;
+                                    border-radius: 50%;
+                                }
+                                .linecoinname{
+                                    display: flex;
+                                    flex-basis: 100%;
+                                    margin-left: 5%;
+                                    font-size: 20px;
+                                }
+                                .arrow{
+                                    width: 20px;
+                                }
+                            }
                         }
                     }
                 }
@@ -319,38 +339,41 @@
     0%{
 
     }
-    20%{
+    10%{
         transform: translateX(0px);
     }
-    28%{
+    18%{
         transform: translateX(200px);
     }
-    36%{
+    26%{
         transform: translateX(200px);
     }
-    44%{
+    34%{
         transform: translateX(400px);
     }
-    52%{
+    42%{
         transform: translateX(400px);
     }
-    60%{
+    50%{
         transform: translateX(600px);
     }
-    68%{
+    58%{
         transform: translateX(600px);
     }
 
-    76%{
+    66%{
         transform: translateX(800px);
     }
-    84%{
+    74%{
         transform: translateX(800px);
     }
-    92%{
+    82%{
+        transform: translateX(1000px);
+    }
+    90%{
         transform: translateX(1000px);
     }
     100%{
-        transform: translateX(1000px);
+        transform: translateX(0px);
     }
 }

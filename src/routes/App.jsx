@@ -9,6 +9,10 @@ function App(props) {
   const [data,setData] = useState([])
   const [trend,setTrend] = useState([])
   const [login,setlogin] = useState(false)
+  let linecoinssorted = data.slice(0)
+      linecoinssorted.sort(function(a,b){return a.price_change_percentage_24h - b.price_change_percentage_24h
+   })
+    console.log(linecoinssorted)
   function useFetchAPI(url)
   {
     fetch(url)
@@ -51,7 +55,7 @@ function App(props) {
               <input onMouseLeave={()=>{}} type="search" name="" id="" placeholder="Search" />
               <p id="slogan">over 2500 stocks</p></div>
             </div>
-        <Graph linecoins = {data} coins = {trend}/>
+        <Graph linecoins = {linecoinssorted} coins = {trend}/>
       </div>
       <div id="main-second-container">
         <Board coins = {data}/>
