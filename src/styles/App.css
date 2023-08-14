@@ -99,6 +99,8 @@
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
+  text-decoration: none;
+  color: black;
 }
 #main-container #main-first-container #graph .graph-pad-wide #Coinline .linecoin-list .linecoin .linecoindiv .linecoinimg {
   width: 50px;

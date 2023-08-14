@@ -17,11 +17,12 @@ nav{
     font-family: 'Poppins', 'Arial';
     #menu{
         display: flex;
+        flex-basis: 60%;
+        
         flex-basis: content;
         margin-top: 4vh;
         list-style: none;
         align-items: center;
-        margin-right: 20px;
         ul{
             display: flex;
             border: 1px solid black;
@@ -54,6 +55,7 @@ nav{
         justify-content: space-between;
         #search-bar-container{
             border: 1px solid black;
+            margin-left: 10%;
             display: flex;
             align-items: center;
             border-radius: 100px;
@@ -65,6 +67,7 @@ nav{
             #search-icon-container{
                 display: flex;
                 align-items: center;
+                justify-content: center;
                 flex-basis: 60px;
                 height: 100%;
                 cursor: pointer;
@@ -72,15 +75,13 @@ nav{
                 cursor: pointer;
             }
                 #s-icon{
-                    margin-left: 15px;
-                    margin-right: 20px;
                     display: flex;
-                    flex-basis: 60px;
                     height: 25px;
             }
             
             }
             #search-bar{
+                
                 display: flex;
                 flex-basis: 200px;
                 text-decoration: none;
@@ -104,6 +105,7 @@ nav{
         }
 
     #sign-btn{
+        margin-right: 10%;
         flex-basis: 15%;
         display: flex;
         list-style: none;
@@ -131,9 +133,15 @@ nav{
     }
 }
     #logo{
+        display: flex;
+
         flex-basis: 15%;
-        border: 1px solid black;
-        border-radius: 50px;
+        justify-content: center;
+        align-items: end;
+        p{
+            font-size: 45px;
+            font-weight: 600;
+        }
     }
 
 }

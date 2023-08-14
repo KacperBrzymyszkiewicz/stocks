@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 function Navbar(props) {
     return(
         <nav>
-            <div id="logo"></div>
+            <div id="logo"><p>Crypto</p></div>
             <div id="menu">
             <ul>
                 <li>

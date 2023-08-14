@@ -7,7 +7,7 @@ function Graph(props){
     const [index,setIndex] = useState(0)
     const [index1,setIndex1] = useState(1)
     let coins = props.coins.map(coin=> <Link to={`/coin/${coin.item.id}`}><div id="graph-item"> <div className="w100"><img id="obrazek" src={coin.item.small}/></div><p id="nazwaa">{coin.item.id}</p></div></Link>)
-    let linecoins = props.linecoins.map(linecoin=><div className="linecoindiv"><img className="linecoinimg" src={linecoin.image} alt="" /><p className="linecoinname"> {(linecoin.price_change_percentage_24h).toFixed(2)}</p>% <FontAwesomeIcon className="arrow fa-2x" icon={faArrowTrendUp} /> </div>)
+    let linecoins = props.linecoins.map(linecoin=><Link className="linecoindiv" to={`/coin/${linecoin.id}`}><img className="linecoinimg" src={linecoin.image} alt="" /><p className="linecoinname"> {(linecoin.price_change_percentage_24h).toFixed(2)}</p>% <FontAwesomeIcon className="arrow fa-2x" icon={faArrowTrendUp} /> </Link>)
     let linecoinssorted = linecoins.slice(0)
     useEffect(()=>{
             setInterval(()=>{
